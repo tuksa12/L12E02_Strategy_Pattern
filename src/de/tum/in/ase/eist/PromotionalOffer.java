@@ -1,6 +1,6 @@
 package de.tum.in.ase.eist;
 
-public class PromotionalOffer {
+public class PromotionalOffer implements PaymentStrategy{
 
 	private String promoDescription;
 

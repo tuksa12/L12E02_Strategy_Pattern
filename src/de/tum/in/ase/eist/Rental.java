@@ -39,7 +39,9 @@ public class Rental {
 		rentedPEV.unlock();
 		rider.setPEV(null);
 
-		// TODO add some functionality here
+		// DONE add some functionality here
+		Payment payment = new Payment(timeElapsedInSeconds(),rentedPEV, rider);
+		payment.pay();
 	}
 
 	public LocalDateTime getFrom() {
